@@ -3,7 +3,7 @@ import React from 'react'
 function Homepage() {
   return (
     <>
-<div className='relative h-full w-full'>
+<div className='relative h-1/2 w-full top-0 '>
 <div className='w-full h-full overflow-hidden -z-10'>
 <div><img src="./src/assets/carousel/c1.jpeg" alt="car" />
 </div>
@@ -27,7 +27,7 @@ function Homepage() {
 {/* </div> */}
 
 <div className='absolute  top-70
- mx-3 text-sm text-white font-serif bg-white/30  bg-opacity-60 animate-bounce  backdrop-grayscale-50 lg:top-200 text-3xl '>
+ mx-3 text-sm text-white font-serif bg-white/30  bg-opacity-60 animate-bounce  backdrop-grayscale-50  '>
 <p>“𝑅𝑒𝓂𝒾𝓃𝒾𝓈𝒸𝒾𝓃𝑔 𝓉𝒽𝑒 𝒪𝓁𝒹, </p>
 <p>𝒞𝑒𝓁𝑒𝒷𝓇𝒶𝓉𝒾𝓃𝑔 𝒯𝑜𝒹𝒶𝓎”</p>
 </div>

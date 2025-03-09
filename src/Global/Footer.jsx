@@ -3,23 +3,24 @@ import React from 'react'
 function Footer() {
   return (
     <>
-    <footer className='text-white flex flex-col justify-between p-4   gap-3 px-3 bg-blue-400 lg:flex-row'>
-<div className=' text-center'>
+    <footer className='text-white flex flex-col  p-4 gap-3 px-3 bg-blue-400 lg:flex lg:flex-row lg:justify-between ' >
+<div className=' text-center  lg:justify-center flex-1/3'>
     <h1 className='text-3xl text-center '><b>Our Story</b></h1>
-    <p className='text-sm w-90 pb-2 text-justify '>The foundation was born from the need for a dedicated team to address Nepal's pressing challenges. Recognizing the stagnation and systemic issues that hinder progress, we operate as a free and independent entity striving to break through these barriers. We actively promote Nepal's hidden cultural, historical, and natural treasures to a global audience while working on numerous projects that reflect our commitment to meaningful change. Together, we are building a better Nepal, one step at a time, for a brighter and more sustainable future.</p>
+    <p className='text-lg text-justify'>The foundation was born from the need for a dedicated team to address Nepal's pressing challenges. Recognizing the stagnation and systemic issues that hinder progress, we operate as a free and independent entity striving to break through these barriers. We actively promote Nepal's hidden cultural, historical, and natural treasures to a global audience while working on numerous projects that reflect our commitment to meaningful change. Together, we are building a better Nepal, one step at a time, for a brighter and more sustainable future.</p>
 <button className='border-2 border-solid items-center rounded-2xl   mx-2.5 '><a href="#" className='p-2 m-2'>Read more</a></button>
 </div>
 <hr />
-<div className='text-center'>
-<div className='flex flex-col gap-3'>
-<img src="./src/assets/footerMap.png" alt="footermap" className='w-80' />
+<div className='text-center flex-1/3'>
+{/* <div className='flex flex-col gap-3'> */}
+<div className=' flex justify-center'>
+<img src="./src/assets/footerMap.png" alt="footermap" className='w-80' /></div>
 
 <div className=' text-2xl space-y-2 items-center'>
     <h1 className='text-center'><b>Quick Links</b></h1>
 <div className='text-xl text-center'>
 <a href="#">Home | </a><a href="#">Contact |</a><a href="#"> Event |</a><a href="#"> Travel</a>
 </div>
-<div className='text-2xl space-y-3 text-center'>
+<div className='text-2xl space-y-3 flex flex-col items-center flex-1/3'>
     <h1 className='text-center'><b>Connect with us</b></h1>
     <div className='flex  gap-6 text-2xl  cursor-pointer'>
         <a href="https://www.facebook.com/">
@@ -40,8 +41,9 @@ function Footer() {
 </div>
 </div>
 </div>
+{/* </div> */}
 <hr />
-<div className='flex flex-col gap-4'>
+<div className='flex flex-col w-auto gap-4'>
     <h1 className='text-2xl text-center'><b>Sponsors</b></h1>
 
 <div className='flex flex-col relative  overflow-hidden items-center justify-center lg:justify-between  gap-4'>
@@ -66,7 +68,7 @@ function Footer() {
     </div>
 </div>
 </div>
-</div>
+
 </footer>
         <hr />
     <div className=" sm:items-center bg-blue-400   ">
