@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 
+
 const CommiteeMembers = ({image , position , name}) =>{
 
     return(
@@ -95,9 +96,11 @@ const Members = () => {
 
     return(
         <>
+
+
 <div>
-<div className='text-blue-400 text-center font-semibold mt-3 md:text-start'>
-                <h1 className='text-2xl '>Executive Committee</h1>
+<div className='text-[#329BD5] text-center font-semibold mt-3 md:text-start'>
+                <h1 className='text-3xl text-center '>Executive Committee</h1>
                </div>
             <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-8   xl:grid-cols-5 ">
               {Member.map((Member, index) => (
@@ -108,8 +111,8 @@ const Members = () => {
 </div>
 
 <div>
-<div className='text-blue-400 text-center font-semibold mt-3 md:text-start'>
-                <h1 className='text-2xl '>Board Members</h1>
+<div className='text-[#329BD5] text-center font-semibold mt-3 md:text-start'>
+                <h1 className='text-3xl text-center '>Board Members</h1>
                </div>
                <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-8 pb-5   xl:grid-cols-5 ">
               {Bmember.map((Bmember, index) => (
@@ -120,7 +123,7 @@ const Members = () => {
 
 
     <div>
-        <h1 className='text-center text-2xl text-blue-400 underline-offset-4'>Together For Sustanability</h1>
+        <h1 className='text-center text-3xl font-semibold text-[#329BD5] underline-offset-4'>Together For Sustanability</h1>
       
     </div>
 

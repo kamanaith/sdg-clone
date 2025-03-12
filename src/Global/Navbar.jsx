@@ -1,5 +1,6 @@
 import { Menu , X } from 'lucide-react'
 import React, { useState } from 'react'
+import {Link} from 'react-router-dom'
 
 
 function Navbar() {
@@ -16,44 +17,45 @@ function Navbar() {
 
         <div className=' py-2 cursor-pointer '>
           <a href="#">
-            <img src="./src/assets/main-logo.png" className='  w-auto h-16 md:h-15  ' alt="logoimg"/>
+            <img src="./src/assets/main-logo.png" className='  w-auto h-16 md:h-15 ' alt="logoimg"/>
           </a>
         </div>
         <button className='flex flex-col ml-10 mr-8 justify-center md:hidden z-30' onClick={toggleNavBar}>
           {isOpen ? <X /> : <Menu />}
             </button>
 
+
             {isOpen &&(
               <div className='flex flex-col gap-3 items-center absolute z-20 md:hidden w-screen bg-blue-400'>
-                 <a href="#" className='text-xl hover:text-green-900'>Home</a>
-                 <a href="#" className='text-xl hover:text-green-900'>AboutUs</a>
-                 <a href="#" className='text-xl hover:text-green-900'>Blogs</a>
-                 <a href="#" className='text-xl hover:text-green-900'>Events</a>
-                 <a href="#"  className='text-lg hover:text-green-900'>Gallery</a>
-                 <a href="#"  className='text-lg hover:text-green-900'>ContactUs</a>
+                 <Link to="/" className='text-xl hover:text-[#329BD5]'>Home</Link>
+                 <Link to="/about" className='text-xl hover:text-[#329BD5]'>AboutUs</Link>
+                 <Link to="/BlogsPage" className='text-xl hover:text-[#329BD5]'>Blogs</Link>
+                 <Link to="/events" className='text-xl hover:text-[#329BD5]'>Events</Link>
+                 <Link to="/gallery"  className='text-lg hover:text-[#329BD5]'>Gallery</Link>
+                 <Link to="/contact"  className='text-lg hover:text-[#329BD5]'>ContactUs</Link>
 
                  
               </div>
             )}
           
-          <ul className='hidden md:flex md:flex-row font-semibold gap-6 text-gray-800   '>
+          <ul className='hidden md:flex md:flex-row font-semibold md:gap-3 lg:gap-10 md:mr-5 lg:mr-50 text-gray-800   '>
             <li className='mx-2  my-6 md:my-0'>
-              <a href="#" className='text-xl hover:text-green-900'>Home</a>
+              <Link to="/" className='text-xl hover:text-[#329BD5]'>Home</Link>
             </li>
             <li  className='mx-2  my-6 md:my-0'>
-              <a href="#"  className='text-lg hover:text-green-900'>AboutUs</a>
+              <Link to="/about"  className='text-lg hover:text-[#329BD5]'>AboutUs</Link>
             </li>
             <li  className='mx-2  my-6 md:my-0'>
-              <a href="#"  className='text-lg hover:text-green-900'>Blogs</a>
+            <Link to="/BlogsPage"  className='text-lg hover:text-[#329BD5]'>Blogs</Link>
             </li>
             <li  className='mx-2  my-6 md:my-0'>
-              <a href="#"  className='text-lg hover:text-green-900'>Events</a>
+            <Link to="/events"  className='text-lg hover:text-[#329BD5]'>Events</Link>
             </li>
             <li  className='mx-2  my-6 md:my-0'>
-              <a href="#"  className='text-lg hover:text-green-900'>Gallery</a>
+            <Link to="/gallery"  className='text-lg hover:text-[#329BD5]'>Gallery</Link>
             </li>
             <li  className='mx-2  my-6 md:my-0'>
-              <a href="#"  className='text-lg hover:text-green-900'>ContactUs</a>
+            <Link to="/contact"  className='text-lg hover:text-[#329BD5]'>ContactUs</Link>
             </li>
           </ul>
       

@@ -21,8 +21,8 @@ const QnS = ({ qn,description}) => {
 
         <div className='bg-gray-600 text-white  justify-between'>
            
-<div className='flex flex-row justify-between'>
-<h3 className="text-sm text-justify p-2 font-semibold  xl:text-3xl xl:p-4">{qn}</h3>     
+<div className='flex flex-row justify-between'onClick={toggleButton} >
+<h3 className="text-sm text-justify p-2 font-semibold  xl:text-xl xl:p-3">{qn}</h3>     
             
             <button onClick={toggleButton} className='text-5xl' >
                 {isOpen ? <Minus />:<Plus/>}
@@ -69,14 +69,14 @@ const Info = () => {
 
   return (
 <>
-<div className='bg-blue-400 text-white p-4 gap-2 lg:flex lg:flex-row lg:p-10  '>
+<div className='bg-[#329BD5] text-white p-4 gap-2 lg:flex lg:flex-row lg:p-10  '>
 <div className='lg:w-1/2 xl:text-3xl'>
     <h1 className='text-xl font-semibold text-center lg:text-2xl xl:text-4xl'>You got Questions?</h1>
-    <p className='text-justify text-xl m-1 xl:text-3xl'>The SDG Foundation is committed to uncovering hidden heritage and showcasing the rich potential of our national heritage through various programs and initiatives. Below, we've answered some of the most common questions you might have.</p>
+    <p className='text-justify text-xl m-1 xl:text-2xl'>The SDG Foundation is committed to uncovering hidden heritage and showcasing the rich potential of our national heritage through various programs and initiatives. Below, we've answered some of the most common questions you might have.</p>
 
 <span>    <button className='text-2xl ' >FAQs</button><MoveRight /></span>
 </div>
-    <div className="flex flex-col p-6 gap-1 bg-blue-400 lg:flex-col lg:w-200   ">
+    <div className="flex flex-col p-6 gap-1 bg-[#329BD5] lg:flex-col lg:w-200   ">
       {question.map((question, index) => (
         <QnS key={index} {...question} />
       ))}

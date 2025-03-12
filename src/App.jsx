@@ -1,47 +1,46 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Header from './Global/Header'
-import Navbar from './Global/Navbar'
-import Homepage from './Pages/HeroPage/Homepage'
-import Intro from './Pages/HeroPage/Intro'
-import BlogList from './Pages/HeroPage/Blogs'
-import Culture from './Pages/HeroPage/Culture'
-import Info from './Pages/HeroPage/Info'
-import Map from './Pages/HeroPage/Map'
-import Footer from './Global/Footer'
-import './App.css'
-import AboutUs from './Pages/AboutPage/AboutUs'
-import Members from './Pages/AboutPage/Commitee'
-import BlogsPage from './Pages/BlogPage/BlogsPage'
-import Events from './Pages/Events'
-import Gallery from './Pages/Gallery'
-import Contact from './Pages/Contact'
+import Header from "./Global/Header";
+import Navbar from "./Global/Navbar";
+import Homepage from "./Pages/HeroPage/Homepage";
 
+import Footer from "./Global/Footer";
+import "./App.css";
+import AboutUs from "./Pages/AboutPage/AboutUs";
+import Members from "./Pages/AboutPage/Commitee";
+import BlogsPage from "./Pages/BlogPage/BlogsPage";
+import Events from "./Pages/Events";
+import Gallery from "./Pages/Gallery";
+import Contact from "./Pages/Contact";
 
 function App() {
-
-
   return (
     <>
-    <Header/>
-    <Navbar/><div className='flex flex-col items-center'>
-<div className='max-w-[1536px]'>
-      <Homepage/>
-      <Intro/> 
-       <BlogList/>
-      <Culture/>
-      <Info/>
-      <Map/>
-      {/* <AboutUs/>
+      <BrowserRouter>
+      <Header />
+      <Navbar />
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/about" element={<AboutUs/>}/>
+          <Route path="/BlogsPage" element={<BlogsPage/>}/>
+          <Route path="/events" element={<Events/>}/>
+          <Route path="/gallery" element={<Gallery/>}/>
+          <Route path="/contact" element={<Contact/>}/>
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+      {/* <div className="flex flex-col items-center"> */}
+        {/* <div className="max-w-[1536px]"> */}
+          {/* <AboutUs/>
        <Members/>
       <Events/>
 <BlogsPage/>
 <Gallery/>
 <Contact/> */}
-</div>
-</div>
-      <Footer/>
+        {/* </div> */}
+      {/* </div> */}
     </>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -1,13 +1,14 @@
+import { Link } from 'lucide-react'
 import React from 'react'
 
 function Footer() {
   return (
     <>
-    <footer className='text-white flex flex-col  p-4 gap-3 px-3 bg-blue-400 lg:flex lg:flex-row lg:justify-between ' >
+    <footer className='text-white flex flex-col  p-4 gap-3 px-3 bg-[#329BD5] lg:flex lg:flex-row lg:justify-between ' >
 <div className=' text-center  lg:justify-center flex-1/3'>
     <h1 className='text-3xl text-center '><b>Our Story</b></h1>
     <p className='text-lg text-justify'>The foundation was born from the need for a dedicated team to address Nepal's pressing challenges. Recognizing the stagnation and systemic issues that hinder progress, we operate as a free and independent entity striving to break through these barriers. We actively promote Nepal's hidden cultural, historical, and natural treasures to a global audience while working on numerous projects that reflect our commitment to meaningful change. Together, we are building a better Nepal, one step at a time, for a brighter and more sustainable future.</p>
-<button className='border-2 border-solid items-center rounded-2xl   mx-2.5 '><a href="#" className='p-2 m-2'>Read more</a></button>
+<button className='border-2 border-solid bg-white text-[#329BD5] text-lg pb-2 pt-1  font-semibold items-center rounded-lg   mx-2.5 '><a href="#" className='p-2 m-2'>READ MORE</a></button>
 </div>
 <hr />
 <div className='text-center flex-1/3'>
@@ -18,7 +19,10 @@ function Footer() {
 <div className=' text-2xl space-y-2 items-center'>
     <h1 className='text-center'><b>Quick Links</b></h1>
 <div className='text-xl text-center'>
-<a href="#">Home | </a><a href="#">Contact |</a><a href="#"> Event |</a><a href="#"> Travel</a>
+<a href="#">Home | </a>
+<a href="#">Contact |</a>
+<a href="#"> Event |</a>
+<a href="#"> Travel</a>
 </div>
 <div className='text-2xl space-y-3 flex flex-col items-center flex-1/3'>
     <h1 className='text-center'><b>Connect with us</b></h1>
@@ -71,7 +75,7 @@ function Footer() {
 
 </footer>
         <hr />
-    <div className=" sm:items-center bg-blue-400   ">
+    <div className=" sm:items-center bg-[#329BD5] ">
 <p className='flex flex-col lg:flex-row items-center justify-center gap-2 p-7 '>
 <span className="text-sm  text-white sm:text-center ">© 2023 <b><a href="#">SDG Foundation</a></b> </span>
 <span  className="text-sm  text-white sm:text-center"> All Rights Reserved. </span>
