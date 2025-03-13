@@ -58,29 +58,29 @@ const BlogList = () =>{
                     description :" like Kathmandu Durbar Square, Lumbini, or Sagarmatha National Park. But did you know.. ",
                 },
   
-                    {
-                        Image:"./src/assets/cave.jpg",
-                        Heading: "The Caves's of Upper Mustang",
-                        name: "15 Tentative World Heritage Sites That Deserve More Attention",
-                        description :" like Kathmandu Durbar Square, Lumbini, or Sagarmatha National Park. But did you know ",
+                //     {
+                //         Image:"./src/assets/cave.jpg",
+                //         Heading: "The Caves's of Upper Mustang",
+                //         name: "15 Tentative World Heritage Sites That Deserve More Attention",
+                //         description :" like Kathmandu Durbar Square, Lumbini, or Sagarmatha National Park. But did you know ",
                        
-                    },
+                //     },
 
-                    {
-                      Image:"./src/assets/cave.jpg",
-                      Heading: "The Caves's of Upper Mustang",
-                      name: "15 Tentative World Heritage Sites That Deserve More Attention",
-                      description :" like Kathmandu Durbar Square, Lumbini, or Sagarmatha National Park. But did you know ",
+                //     {
+                //       Image:"./src/assets/cave.jpg",
+                //       Heading: "The Caves's of Upper Mustang",
+                //       name: "15 Tentative World Heritage Sites That Deserve More Attention",
+                //       description :" like Kathmandu Durbar Square, Lumbini, or Sagarmatha National Park. But did you know ",
                      
-                  },
+                //   },
 
-                  {
-                    Image:"./src/assets/cave.jpg",
-                    Heading: "The Caves's of Upper Mustang",
-                    name: "15 Tentative World Heritage Sites That Deserve More Attention",
-                    description :" like Kathmandu Durbar Square, Lumbini, or Sagarmatha National Park. But did you know ",
+                //   {
+                //     Image:"./src/assets/cave.jpg",
+                //     Heading: "The Caves's of Upper Mustang",
+                //     name: "15 Tentative World Heritage Sites That Deserve More Attention",
+                //     description :" like Kathmandu Durbar Square, Lumbini, or Sagarmatha National Park. But did you know ",
                    
-                },
+                // },
     ];
 
     let renderBlog;

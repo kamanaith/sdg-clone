@@ -29,16 +29,7 @@ function App() {
         </Routes>
         <Footer />
       </BrowserRouter>
-      {/* <div className="flex flex-col items-center"> */}
-        {/* <div className="max-w-[1536px]"> */}
-          {/* <AboutUs/>
-       <Members/>
-      <Events/>
-<BlogsPage/>
-<Gallery/>
-<Contact/> */}
-        {/* </div> */}
-      {/* </div> */}
+    
     </>
   );
 }

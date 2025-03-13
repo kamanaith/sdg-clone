@@ -1,6 +1,22 @@
 import React from 'react'
+import { useEffect , useState } from 'react'
 
-function Intro() {
+const Intro = () => {
+
+  const [rotation , setRotation] = useState(0);
+
+  useEffect(() =>{
+const interval = setInterval(() => {
+
+
+setRotation((prev) => (prev + 1) % 360);
+
+  },50);
+
+  return () => clearInterval(interval);
+} ,[]);
+
+
   return (
     <>
     
@@ -17,12 +33,14 @@ function Intro() {
 
     <div className='flex flex-col  bg-[#329BD5] items-center lg:flex-row lg:w-full lg:justify-between '>
         
-          <img src="./src/assets/rotate/rotate3.png" alt="image" className=' p-2 lg:p-15 lg:w-[70%]' />
+          <img src="./src/assets/rotate/rotate3.png" alt="image" className=' p-2 lg:p-15 lg:w-[60%]' />
       
-      <div className="relative al w-80 h-80 sm:w-60 sm:h-60 md:w-100 md:h-100 lg:mr-20 ">
-        <img    src="./src/assets/rotate/rotate1.png" alt="Spinning Image" className="w-full h-full " />
-        <img src="./src/assets/rotate/rotate2.png"  alt="Earth" className="absolute inset-0 m-auto w-35 h-35 sm:w-24 sm:h-24 md:w-50 md:h-50" />
-      </div>
+  <div className="relative justify-center flex items-center w-80 h-80 sm:w-60 sm:h-60 md:w-120 md:h-120 lg:mr-20 " style={{ transform: `rotate(${rotation}deg)`, transition: "transform 20s linear" }}>
+        
+        <img    src="./src/assets/rotate/rotate1.png" alt="Spinning Image" className="w-full h-full absolute " />
+      
+        <img src="./src/assets/rotate/rotate2.png"  alt="Earth" className="absolute   m-auto w-35 h-35 sm:w-24 sm:h-24 md:w-50 md:h-50" />
+        </div>
     
     </div>
 </div>

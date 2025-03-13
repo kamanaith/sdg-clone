@@ -55,8 +55,8 @@ function Footer() {
 <div className='flex flex-row'>     
        <img src="./src/assets/sponsor1.png" alt="sponsors " className='h-20 ' />
         <img src="./src/assets/sponsor2.png" alt="sponsors" className='h-20' />
-        <img src="./src/assets/sponsor4.png" alt="sponsors" className='h-20 ' />
-        <img src="./src/assets/sponsorFooter.png" alt="sponsors" className='h-20 ' />
+        {/* <img src="./src/assets/sponsor4.png" alt="sponsors" className='h-20 ' /> */}
+        {/* <img src="./src/assets/sponsorFooter.png" alt="sponsors" className='h-20 ' /> */}
 </div>
 
     <div className='text-center'>
