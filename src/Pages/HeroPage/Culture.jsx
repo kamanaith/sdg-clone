@@ -1,13 +1,12 @@
 import React from 'react'
 import bgImage from '../HeroPage/CultureImages/c2.jpg'
-import CultureSection from '../../assets/sponsers/cultureSection1.jpg'
 
 function Culture() {
   return (
     <>
 <div className='flex flex-col lg:flex-row  mb-2 '>
     <div className='bg-[#329BD5] h-60   lg:w-[50%] xl:h-100'>
-<img src={CultureSection} alt="culture" className='p-3 h-60 rounded-2xl  w-screen xl:h-100' />
+<img src="./src/assets/cultureSection1.jpg" alt="culture" className='p-3 h-60 rounded-2xl  w-screen xl:h-100' />
     </div>
 <div   style={{ backgroundImage: `url(${bgImage})` }} className='bg-cover flex flex-col md:flex-row gap-4 lg:justify-around lg:items-center relative lg:w-full  background: rgba(0, 0, 0, 0.5);  bg-center h-60 xl:h-100'>
 <div className="absolute inset-0 bg-black/60"></div>

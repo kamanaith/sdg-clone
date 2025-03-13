@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
-import c9 from '../../assets/carousel/c9.jpeg'
-import kritipur from '../../assets/carousel/Kritipur.jpg'
-import kokhana from '../../assets/carousel/c8.jpg'
+
+
 const BlogCard = ({ Image,Heading, name, description, link  }) => {
 
     return (
@@ -38,7 +37,7 @@ const BlogList = () =>{
 
     const blog = [
         {
-            Image: c9,
+            Image:"./src/assets/c9.jpeg",
             Heading: "Nepal's  Hidden Heritage",
             name: "15 Tentative World Heritage Sites That Deserve More Attention",
             description :"places like Kathmandu Durbar Square, Lumbini, or Sagarmatha National Park. But did you know .. ",
@@ -46,20 +45,42 @@ const BlogList = () =>{
         },
       
             {
-                Image: kritipur,
+                Image:"./src/assets/kritipur.jpg",
                 Heading: "Kritipur-",
                 name: "15 Tentative World Heritage Sites That Deserve More Attention",
                 description :" like Kathmandu Durbar Square, Lumbini, or Sagarmatha National Park. But did you know..",
                 link: "#",
             },
                 {
-                    Image: kokhana ,
+                    Image:"./src/assets/kokhana.jpg",
                     Heading: "Kkhokhana",
                     name: "15 Tentative World Heritage Sites That Deserve More Attention",
                     description :" like Kathmandu Durbar Square, Lumbini, or Sagarmatha National Park. But did you know.. ",
                 },
   
-              
+                //     {
+                //         Image:"./src/assets/cave.jpg",
+                //         Heading: "The Caves's of Upper Mustang",
+                //         name: "15 Tentative World Heritage Sites That Deserve More Attention",
+                //         description :" like Kathmandu Durbar Square, Lumbini, or Sagarmatha National Park. But did you know ",
+                       
+                //     },
+
+                //     {
+                //       Image:"./src/assets/cave.jpg",
+                //       Heading: "The Caves's of Upper Mustang",
+                //       name: "15 Tentative World Heritage Sites That Deserve More Attention",
+                //       description :" like Kathmandu Durbar Square, Lumbini, or Sagarmatha National Park. But did you know ",
+                     
+                //   },
+
+                //   {
+                //     Image:"./src/assets/cave.jpg",
+                //     Heading: "The Caves's of Upper Mustang",
+                //     name: "15 Tentative World Heritage Sites That Deserve More Attention",
+                //     description :" like Kathmandu Durbar Square, Lumbini, or Sagarmatha National Park. But did you know ",
+                   
+                // },
     ];
 
     let renderBlog;
@@ -85,7 +106,9 @@ const BlogList = () =>{
         <BlogCard key={index} {...blog} />
       ))}
     </div>
-  
+    {/* <div className='text-center mt-4 '> 
+      <button className='text-2xl border-white m-4 p-2 text-white pl-8 pr-8  rounded-xl bg-[#329BD5] '>More Blogs</button>
+    </div> */}
 </>
   );
 };
