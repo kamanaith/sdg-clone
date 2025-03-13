@@ -1,7 +1,7 @@
 import { Menu , X } from 'lucide-react'
 import React, { useState } from 'react'
 import {Link} from 'react-router-dom'
-
+import mainlogo from '../assets/logo/mainlogo.png'
 
 function Navbar() {
 
@@ -17,7 +17,7 @@ function Navbar() {
 
         <div className=' py-2 cursor-pointer '>
           <a href="#">
-            <img src="./src/assets/main-logo.png" className='  w-auto h-16 md:h-15 ' alt="logoimg"/>
+            <img src={mainlogo} className='  w-auto h-16 md:h-15 ' alt="logoimg"/>
           </a>
         </div>
         <button className='flex flex-col ml-10 mr-8 justify-center md:hidden z-30' onClick={toggleNavBar}>

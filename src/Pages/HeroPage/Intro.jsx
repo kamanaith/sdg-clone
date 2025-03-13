@@ -1,5 +1,9 @@
 import React from 'react'
 import { useEffect , useState } from 'react'
+import rotate3 from '../../assets/rotate/rotate3.png'
+import rotate2 from '../../assets/rotate/rotate2.png'
+import rotate1 from '../../assets/rotate/rotate1.png'
+
 
 const Intro = () => {
 
@@ -33,13 +37,13 @@ setRotation((prev) => (prev + 1) % 360);
 
     <div className='flex flex-col  bg-[#329BD5] items-center lg:flex-row lg:w-full lg:justify-between '>
         
-          <img src="./src/assets/rotate/rotate3.png" alt="image" className=' p-2 lg:p-15 lg:w-[60%]' />
+          <img src={rotate3} alt="image" className=' p-2 lg:p-15 lg:w-[60%]' />
       
   <div className="relative justify-center flex items-center w-80 h-80 sm:w-60 sm:h-60 md:w-120 md:h-120 lg:mr-20 " style={{ transform: `rotate(${rotation}deg)`, transition: "transform 20s linear" }}>
         
-        <img    src="./src/assets/rotate/rotate1.png" alt="Spinning Image" className="w-full h-full absolute " />
+        <img    src={rotate1} alt="Spinning Image" className="w-full h-full absolute " />
       
-        <img src="./src/assets/rotate/rotate2.png"  alt="Earth" className="absolute   m-auto w-35 h-35 sm:w-24 sm:h-24 md:w-50 md:h-50" />
+        <img src={rotate2}  alt="Earth" className="absolute   m-auto w-35 h-35 sm:w-24 sm:h-24 md:w-50 md:h-50" />
         </div>
     
     </div>
