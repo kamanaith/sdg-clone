@@ -1,5 +1,7 @@
 import React, {useState} from 'react'
-
+import c9 from '../../assets/carousel/c9.jpeg'
+import Kritipur from '../../assets/carousel/Kritipur.jpg'
+import cave from '../../assets/carousel/cave.jpg'
 
 const BlogCard = ({ Image,Heading, name, description, link  }) => {
 
@@ -37,7 +39,7 @@ const BlogList = () =>{
 
     const blog = [
         {
-            Image:"./src/assets/c9.jpeg",
+            Image: c9,
             Heading: "Nepal's  Hidden Heritage",
             name: "15 Tentative World Heritage Sites That Deserve More Attention",
             description :"places like Kathmandu Durbar Square, Lumbini, or Sagarmatha National Park. But did you know .. ",
@@ -45,14 +47,14 @@ const BlogList = () =>{
         },
       
             {
-                Image:"./src/assets/kritipur.jpg",
+                Image: Kritipur,
                 Heading: "Kritipur-",
                 name: "15 Tentative World Heritage Sites That Deserve More Attention",
                 description :" like Kathmandu Durbar Square, Lumbini, or Sagarmatha National Park. But did you know..",
                 link: "#",
             },
                 {
-                    Image:"./src/assets/kokhana.jpg",
+                    Image: cave,
                     Heading: "Kkhokhana",
                     name: "15 Tentative World Heritage Sites That Deserve More Attention",
                     description :" like Kathmandu Durbar Square, Lumbini, or Sagarmatha National Park. But did you know.. ",

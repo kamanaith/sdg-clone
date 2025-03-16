@@ -1,5 +1,8 @@
 
 import React from 'react'
+import footerMap from '../assets/sponsers/footerMap.png'
+import sponsor1 from '../assets/sponsers/sponsor1.png'
+import sponsor2 from '../assets/sponsers/sponsor2.png'
 
 function Footer() {
   return (
@@ -14,7 +17,7 @@ function Footer() {
 <div className='text-center flex-1/3'>
 {/* <div className='flex flex-col gap-3'> */}
 <div className=' flex justify-center'>
-<img src="./src/assets/footerMap.png" alt="footermap" className='w-80' /></div>
+<img src={footerMap} alt="footermap" className='w-80' /></div>
 
 <div className=' text-2xl space-y-2 items-center'>
     <h1 className='text-center'><b>Quick Links</b></h1>
@@ -53,8 +56,8 @@ function Footer() {
 <div className='flex flex-col relative  overflow-hidden items-center justify-center lg:justify-between  gap-4'>
 
 <div className='flex flex-row'>     
-       <img src="./src/assets/sponsor1.png" alt="sponsors " className='h-20 ' />
-        <img src="./src/assets/sponsor2.png" alt="sponsors" className='h-20' />
+       <img src={sponsor1} alt="sponsors " className='h-20 ' />
+        <img src={sponsor2} alt="sponsors" className='h-20' />
         {/* <img src="./src/assets/sponsor4.png" alt="sponsors" className='h-20 ' /> */}
         {/* <img src="./src/assets/sponsorFooter.png" alt="sponsors" className='h-20 ' /> */}
 </div>
