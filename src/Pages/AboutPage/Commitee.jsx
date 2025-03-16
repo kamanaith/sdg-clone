@@ -1,4 +1,17 @@
 import React,{useState} from 'react'
+import Prakash from '../../assets/aboutus/prakashAdhikari.png'
+import Pranish from '../../assets/aboutus/pranishPokharel.png'
+import Manish from '../../assets/aboutus/manishTuladhar.png'
+import Nimesh from '../../assets/aboutus/nimeshGurung.png'
+import Surajan from '../../assets/aboutus/surajanPokharel.png'
+import Utsav from '../../assets/aboutus/utsavPokhrel.png'
+import Divyapati from '../../assets/aboutus/divyapatiBhattarai.png'
+import Arpana from '../../assets/aboutus/arpanaGhimire.png'
+import Anuj from '../../assets/aboutus/anujNeupane.png'
+import sponsor1 from '../../assets/sponsers/sponsor1.png'
+import sponsor2 from '../../assets/sponsers/sponsor2.png'
+import sponsor3 from '../../assets/sponsers/sponsor3.png'
+import sponsor4 from '../../assets/sponsers/sponsor4.png'
 
 
 const CommiteeMembers = ({image , position , name}) =>{
@@ -27,31 +40,31 @@ const Members = () => {
 
     const Member = [
         {
-            image:"./src/assets/aboutus/prakashAdhikari.png",
+            image: Prakash,
             position:"President",
             name: "Prakash Adhikari",
         },
 
         {
-            image:"./src/assets/aboutus/pranishPokharel.png",
+            image: Pranish,
             position:"Vice-President",
             name: "Pranish Pokhrel",
         },
 
         {
-            image:"./src/assets/aboutus/manishTuladhar.png",
+            image: Manish,
             position:"Secretery",
             name: "Manish Tuladhar",
         },
 
         {
-            image:"./src/assets/aboutus/nimeshGurung.png",
+            image: Nimesh,
             position:"Vice-Secretary",
             name: "Nimesh Gurung",
         },
 
         {
-            image:"./src/assets/aboutus/surajanPokharel.png",
+            image: Surajan,
             position:"Treasurer",
             name: "Surajan Pokhrel",
         },
@@ -59,22 +72,22 @@ const Members = () => {
 
     const Bmember = [
         {
-            image:"./src/assets/aboutus/utsavPokhrel.png",
+            image:Utsav,
             name: "Utsav Pokhrel",
         },
 
         {
-            image:"./src/assets/aboutus/arpanaGhimire.png",
+            image: Arpana,
             name: "Arpana Ghimire",
         },
 
         {
-            image:"./src/assets/aboutus/divyapatiBhattarai.png",
+            image: Divyapati,
             name: "Er. Divyapati Bhattarai",
         },
 
         {
-            image:"./src/assets/aboutus/anujNeupane.png",
+            image: Anuj,
             name: "Anuj Neupane",
         },
 
@@ -131,16 +144,15 @@ const Members = () => {
    <div className=''>
    <marquee behavior="scroll" direction="left" scrollamount="5" loop="infinite"  >
     <div className='flex flex-row gap-4 p-15'>
-    {/* <img src="./" alt="Image 1" width="200px" /> */}
-    <img src="./src/assets/aboutus/anujNeupane.png" alt="Image 2" width="200px" />
-    <img src="./src/assets/aboutus/surajanPokharel.png" alt="Image 3" width="200px" />
-    <img src="./src/assets/aboutus/utsavPokhrel.png" alt="Image 4" width="200px" />
-    <img src="./src/assets/aboutus/prakashAdhikari.png" alt="Image 5" width="200px" />
+    <img src={Anuj} alt="Image 2" width="200px" />
+    <img src={Surajan} alt="Image 3" width="200px" />
+    <img src={Utsav} alt="Image 4" width="200px" />
+    <img src={Prakash} alt="Image 5" width="200px" />
     <img src="./src/assets/sponsorFooter.png" alt="Image 6" width="200px" />
-    <img src="./src/assets/sponsor1.png" alt="Image 7" width="200px" />
-    <img src="./src/assets/sponsor2.png" alt="Image 8" width="200px" />
-    <img src="./src/assets/sponsor3.png" alt="Image 9" width="200px" />
-    <img src="./src/assets/sponsor4.png" alt="Image 10" width="200px" />
+    <img src={sponsor1} alt="Image 7" width="200px" />
+    <img src={sponsor2} alt="Image 8" width="200px" />
+    <img src={sponsor3} alt="Image 9" width="200px" />
+    <img src={sponsor4} alt="Image 10" width="200px" />
     </div>
 </marquee>
    </div>
